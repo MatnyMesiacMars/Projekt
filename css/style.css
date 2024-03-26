@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0px 20px;
+  background-color: black;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; 
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.4);
+  transition: 1s;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  background-color: black;
+  color: white;
+  padding: 5% 10%;
+  margin-top: 20px;
+}
+
+.copy {
+  margin: 0%;
+  display: flex;
+  padding: 5% 10%;
+  text-align: center;
+  justify-content: center;
+}
+
+.banner1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/car_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 1000px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  text-align: center;
+  font-size: 6em;
+  padding-top: 100px; 
+}
+
+.container {
+  padding: 3% 10% 3% 10%;
+}
+
+.riadky {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 0;
+}
+
+.jedna {
+  text-align: left;
+  flex: 1;
+  color: black;
+}
+
+.dva {
+  flex: 1;
+  text-align: right;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  #logo img {
+    height: 80px;
+    width: 80px;
+  }
+
+  ul {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  ul li {
+    margin: 5px 0;
+  }
+
+  .container {
+    padding: 3% 5%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 5% 5%;
+  }
+
+  .banner1 {
+    min-height: 600px;
+    font-size: 4em;
+    padding-top: 80px; 
+  }
+}

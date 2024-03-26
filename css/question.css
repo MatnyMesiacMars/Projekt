@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  header a {
+    text-decoration: none;
+  }
+  
+  header {
+    padding: 0px 20px;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+  }
+  
+  #logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  ul a {
+    color: white;
+  }
+  
+  ul li {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  ul li:hover {
+    transform: scale(1.4);
+    transition: 1s;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    background-color: black;
+    color: white;
+    padding: 5% 10%;
+    margin-top: 20px;
+  }
+  
+  .copy {
+    margin: 0%;
+    display: flex;
+    padding: 5% 10%;
+    text-align: center;
+    justify-content: center;
+  }
+ 
+  
+  
+.banner1{
+    background-image: url("../img/question.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: overlay;
+    margin-top: 100px;
+}
+
+
+section{
+    padding: 5% 10%;
+}
+.banner1 h1{
+font-size: 50px;
+text-transform: uppercase;
+text-align: center;
+
+
+}
+.banner1 p{
+    font-size: 20px;
+    text-align: center;
+    top: 50px;
+    justify-content: end;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+.active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  } 
+
+.panel p {
+    color: black;
+}
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  
+    header {
+      height: 80px;
+    }
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 5% 5%;
+    }
+
+  
+    #logo img {
+      height: 80px;
+      width: 80px;
+    }
+  
+    ul {
+      flex-direction: row;
+      text-align: center;
+    }
+  
+    ul li {
+      margin: 5px 0;
+    }
+  
+   
+  
+    .container {
+      padding: 3% 5%;
+    }
+  
+    .banner1 {
+      min-height: 400px;
+      font-size: 3em;
+    }
+  
+    .banner1 h1 {
+      font-size: 30px;
+    }
+  
+    .banner1 p {
+      font-size: 16px;
+    }
+  
+    .accordion {
+      padding: 12px;
+    }
+  
+    .panel {
+      padding: 0 12px;
+    }
+  }

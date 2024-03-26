@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  header a {
+    text-decoration: none;
+  }
+  
+  header {
+    padding: 0px 20px;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  #logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  ul a {
+    color: white;
+  }
+  
+  ul li {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  ul li:hover {
+    transform: scale(1.4);
+    transition: 1s;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    background-color: black;
+    color: white;
+    padding: 5% 10%;
+    margin-top: 20px;
+  }
+  
+  .copy {
+    margin: 0%;
+    display: flex;
+    padding: 5% 10%;
+    text-align: center;
+    justify-content: center;
+  }
+.banner1{
+    background-image: url("../img/fotka1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: overlay;
+    text-align: center;
+margin-top: 100px;    
+}
+.banner2{
+    background-image: url("../img/fotka2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: overlay;
+    text-align: center;
+}
+.banner3{
+    background-image: url("../img/fotka3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: overlay;
+    text-align: center;
+}
+.banner4{
+    background-image: url("../img/fotka4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: overlay;
+    text-align: center;
+}
+.banner5{
+    background-image: url("../img/fotka5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: overlay;
+    text-align: center;
+}
+section{
+    padding: 5% 10%;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    #logo img {
+        height: 80px;
+        width: 80px;
+    }
+
+    ul {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    ul li {
+        margin: 5px 0;
+    }
+
+    
+
+    .banner1,
+    .banner2,
+    .banner3,
+    .banner4,
+    .banner5 {
+        min-height: 200px;
+    }
+
+    section {
+        padding: 5% 5%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 5% 5%;
+    }
+
+    .copy {
+        padding: 5% 5%;
+    }
+}
