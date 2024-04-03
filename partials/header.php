@@ -20,10 +20,10 @@
         <nav>
             <div class="menu-items">
             <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li><a href="log.html">Form</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="question.html">Questions</a></li>
+                <li> <a href="index.php">Home</a></li>
+                <li><a href="log.php">Form</a></li>
+                <li><a href="gallery.php">Gallery</a></li>
+                <li><a href="question.php">Questions</a></li>
             </ul>
         </div>
 
